@@ -19,7 +19,7 @@ public class MeterialCamera : MonoBehaviour
 		}
 		else if (Input.GetKeyDown(KeyCode.RightArrow))
 		{
-			index = Mathf.Min(index + 1, 8);
+			index = Mathf.Min(index + 1, 10);
 			zoom = false;
 		}
 		transform.position = Vector3.Lerp(transform.position, new Vector3(index * 5f, transform.position.y, transform.position.z), Time.deltaTime * 5f);
